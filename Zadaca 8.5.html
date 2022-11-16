@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Avtomobili</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+</head>
+<body>	
+    <form name="form" id="form">
+        <label>Proizvoditel:</label>
+        <select name="make" id="make" onchange = "selectValue()">
+        <option value="" selected disabled></option>
+        <option value="vl">Volvo</option>
+        <option value="me">Mercedes</option>
+        <option value="vw">Audi</option>
+        </select><br/>
+        <label>Model na kola:</label> 
+        <input type="text" id="model"><br/>
+        <label>Tip na avtomobil:</label>
+        <select name="type" id="type" onchange = "selectValueT()">
+        <option value="" selected disabled></option>
+        <option value="sl">Saloon</option>
+        <option value="es">Estate</option>
+        <option value="co">Coupe</option>
+        </select><br/>
+        <label>Tip na gorivo:</label>
+        <input type="radio" name="gorivo" value = "Gas" onclick="radioG()">Gas
+        <input type="radio" name="gorivo" value = "Diesel">Diesel
+        <input type="radio" name="gorivo" value = "Lpg">Lpg<br/>
+        <label>Sostojba na avtomobil:</label>
+        <input type="radio" name="sostojba" value = "nov" onclick="radioS()">Нов
+        <input type="radio" name="sostojba" value = "poloven">Половен
+        <br/>
+        <label>Moknost na motor do:</label><input type='text' id="mok" ><br/>
+    <input type="button" value="Пребарување" id="kopce" onclick= "all()"><br/>
+    </form>
+   <script src="script_8.5.js"></script>
+</body>
+</html>
